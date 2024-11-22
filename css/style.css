@@ -9768,3 +9768,67 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+
+/* utility class for take full space and responsive */
+.img-full-space {
+  width: 100%;         /* Stretch to the full width of the parent */
+  height: 100%;        /* Stretch to the full height of the parent */
+  object-fit: cover;   /* Ensure the image covers the entire container */
+}
+
+/* Optional: Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .img-full-space {
+      object-fit: contain; /* Adjust behavior for smaller screens if necessary */
+  }
+}
+
+/* scrollable cards */
+div.scroll-container {
+  height: 105vh;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 8px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+
+}
+
+div.scroll-container img {
+  padding: 10px;
+  width: 45vw; /* Adjusted width to fit 2 images on small screens */
+  height: 90vh; /* Fixed height */
+  object-fit: cover; /* Crop image to fill the space */
+}
+
+/* Media query for larger screens */
+@media (min-width: 608px) {
+  div.scroll-container img {
+    width: 22vw; /* Adjust width for 4 images on larger screens */
+  }
+}
+
+  /* Hide scrollbar */
+
+
+
+  
+/* scrollable cards */
+
+/* writing content on the head */
+.header-child{
+
+  margin-top: 5rem;
+}
+.logo-head {
+  height: 50vh;
+}
+/* writing content on the head */
+
+/* features wrap */
+.feature-icon {
+  
+}
+/* features wrap */
